@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--head-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Drnks Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<!--body-->
+<body>
+  <section class="landing-page">
+    <div class="circle"></div>
+    <header>
+      <a href=""><img src="img/drinklogo2.png" width="80"  class="logo"></a>
+      <div class="toggle" onclick="toggleManu();"></div>
+      <ul class="navigation">
+        <li><a href="index.html" class="nav active">Home</a></li>
+        <li><a href="" class="nav">Menu</a></li>
+        <li><a href="" class="nav">What's new</a></li>
+        <li><a href="" class="nav">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>Leave you <br> feeling <span> refreshed.</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odio in repellat cum harum magnam omnis, aspernatur, amet cumque, repudiandae iure perferendis deleniti fugiat numquam iste? Cumque repellendus fuga accusantium dignissimos facere commodi provident quis. Obcaecati explicabo temporibus ut beatae?</p>
+        <!--link learn more-->
+        <a href="#"> Learn More </a>
+      </div>
+      <div class="imgBox">
+        <img src="img/tea1.png" class="drinks">
+      </div>
+    </div>
+
+    <!--thumbs images-->
+    <ul class="thumb">
+      <li> 
+        <img src="img/tea1.png" onclick="imgSlider('img/tea1.png'); changeCircleColor('#a1051d')">
+      </li>
+      
+      <li><img src="img/tea2.png" onclick="imgSlider('img/tea2.png'); changeCircleColor('#fddd5c')">
+      </li>
+      
+      <li><img src="img/sh1.png" onclick="imgSlider('img/sh1.png'); changeCircleColor('#e4a0b7')">
+      </li>
+      <li><img src="img/sh2.png" onclick="imgSlider('img/sh2.png'); changeCircleColor('#d5a670')">
+    </ul>
+  </section>
+</body>
+</html>
